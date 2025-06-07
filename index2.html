@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto Vora - Formulário</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="form-container">
+    <h1>Projeto Vora - Formulário</h1>
+
+    <form id="main-form" action="#" method="post" novalidate>
+      <label for="introducao">Introdução</label>
+      <textarea id="introducao" name="introducao" rows="5" placeholder="Digite a introdução do projeto..." required></textarea>
+
+      <label for="objetivos">Objetivos do Projeto</label>
+      <textarea id="objetivos" name="objetivos" rows="4" placeholder="Onde se pretende chegar com o projeto..." required></textarea>
+
+      <label for="justificativa">Justificativa do Projeto</label>
+      <textarea id="justificativa" name="justificativa" rows="5" placeholder="Importância e motivação do projeto..." required></textarea>
+
+      <label for="link">Link do Projeto</label>
+      <input type="url" id="link" name="link" placeholder="https://seudominio.com/projeto-vora" required />
+
+      <label for="descricao">Descrição do Projeto</label>
+      <textarea id="descricao" name="descricao" rows="6" placeholder="Descrição detalhada do projeto..." required></textarea>
+
+      <label for="conclusao">Considerações Finais</label>
+      <textarea id="conclusao" name="conclusao" rows="4" placeholder="Conclusões gerais..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <section class="contact">
+    <h2>Contato</h2>
+    <form id="contact-form" novalidate>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <section class="gallery">
+    <h2>Galeria de Fotos</h2>
+    <div class="image-grid">
+      <img src="https://source.unsplash.com/250x180/?nature,water" alt="Foto 1" />
+      <img src="https://source.unsplash.com/251x180/?technology,city" alt="Foto 2" />
+      <img src="https://source.unsplash.com/252x180/?robot,school" alt="Foto 3" />
+    </div>
+  </section>
+
+  <section class="mapa">
+    <h2>Mapa do Local</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7497537376527!2d-46.5760821!3d-23.5062017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ed2b2d702e5%3A0x29fd76ea4b0933d6!2sEscola%20Estadual!5e0!3m2!1spt-BR!2sbr!4v1662587486101!5m2!1spt-BR!2sbr"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="social">
+    <h2>Nos Acompanhe</h2>
+    <div class="social-embed">
+      <iframe src="https://www.instagram.com/p/Cvyy6ZDsQhS/embed" width="320" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+
+      <iframe
+        width="320" height="180"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
